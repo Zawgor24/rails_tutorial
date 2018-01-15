@@ -18,7 +18,7 @@ gem 'rubyzip'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara'
-  gem 'selenium-webdriver', '2.35.1'
+  gem 'selenium-webdriver'
 end
 
 group :doc do
