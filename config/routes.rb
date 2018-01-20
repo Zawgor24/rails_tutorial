@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
 
+  resources :users
 
   root 'static_pages#home'  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
