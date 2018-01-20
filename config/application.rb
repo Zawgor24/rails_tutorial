@@ -1,4 +1,5 @@
 require_relative 'boot'
+require File.expand_path('../boot', __FILE__)
 
 require "rails"
 # Pick the frameworks you want:
@@ -26,6 +27,7 @@ module SampleApp
     # -- all .rb files in that directory are automatically loaded.
 
     # Don't generate system test files.
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.generators.system_tests = nil
   end
 end
